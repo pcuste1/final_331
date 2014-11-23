@@ -1,3 +1,6 @@
+// Most of this code was written by myself, but was improved using the example given here
+// http://en.wikipedia.org/wiki/Quine_%28computing%29
+
 #include <iostream>
 #include <string>
 
