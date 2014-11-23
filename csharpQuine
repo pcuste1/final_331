@@ -1,0 +1,66 @@
+// Quine Code - C#
+// Richard Buck, Patrick Custer, Justin Mullins, Hazma Saeed
+
+// Sources Used
+// "Quine (computing)." Wikipedia. Wikimedia Foundation, 23 Nov. 2014. Web. 23 Nov. 2014.
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Quine
+{
+    class csharpQuine
+    {
+        static void Main(string[] args)
+        {
+            string[] codeBlock = {
+            "using System;",
+            "using System.Collections.Generic;",
+            "using System.Linq;",
+            "using System.Text;",
+            "using System.Threading.Tasks;",
+            " ",
+            "namespace Quine",
+            "{",
+            "    class csharpQuine",
+            "    {",
+            "        static void Main(string[] args)",
+            "        {",
+            "            string[] codeBlock = {",
+            "            };",
+            "            for(int i = 0; i < 13; i++)",
+            "            {",
+            "                Console.WriteLine(codeBlock[i]);",
+            "            }",
+            "            for(int i = 0; i < 30; i++)",
+            "            {",
+            "                Console.WriteLine(\"                     \" + \"\\\"\" + codeBlock[i] + \"\\\"\" + \",\");",
+            "            }",
+            "            for(int i = 13; i < 30; i++)",
+            "            {",
+            "                Console.WriteLine(codeBlock[i]);",
+            "            }",
+            "            return;",
+            "        }",
+            "    }",
+            "}"
+            };
+            for (int i = 0; i < 13; i++)
+            {
+                Console.WriteLine(codeBlock[i]);
+            }
+            for (int i = 0; i < 30; i++)
+            {
+                Console.WriteLine("                     " + "\"" + codeBlock[i] + "\"" + ",");
+            }
+            for (int i = 13; i < 30; i++)
+            {
+                Console.WriteLine(codeBlock[i]);
+            }
+            return;
+        }
+    }
+}
