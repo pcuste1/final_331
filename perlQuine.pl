@@ -4,7 +4,7 @@ $q = chr(39);
 @codeBlock = (
                 '#!/usr/bin/perl -w',
                 '',
-                '$q = chr(34);',
+                '$q = chr(39);',
                 '@codeBlock = (',
                 '                );',
                 '',
