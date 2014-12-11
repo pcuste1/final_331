@@ -1,0 +1,15 @@
+Contributers: Justin Mullins, Patrick Custer, Richard Buck, Hamza Saeed
+Date: 12/11/2014
+Files: quinerelay.pl, and Makefile
+Description: A quine relay starting with a perl file (quinerelay.pl) which outputs ruby code which
+outputs java code which outputs c++ code which outputs python code which outputs the original perl code.
+How to run:
+Easy way: Type 'make' to execute the included Makefile which automatically runs through the manual process.
+Manual way:
+perl quinerelay.pl > quinerelay.rb
+ruby quinerelay.rb > quineRelay.java
+javac quineRelay.java
+java quineRelay > quinerelay.cpp
+g++ -o quinerelay quinerelay.cpp && ./quinerelay > quinerelay.py
+python quinerelay.py > quinerelay2.pl
+diff quinerelay.pl quinerelay2.pl
