@@ -50,7 +50,7 @@ $d = chr(44);
              'main()',
              '------------------------------J A V A--------------------------------',
              '            ',
-             'public class test',
+             'public class quineRelay',
              '{',
              '    public static void main(String [] args)',
              '    {',
