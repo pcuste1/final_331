@@ -22,13 +22,13 @@ $q = chr(39);
                 "  q = 34.chr",
                 "  codeBlock = [",
                 "  ]",
-                "  for i in 33..45",
+                "  for i in 33..43",
                 "    puts codeBlock[i]",
                 "  end",
-                "  for i in 0..104",
+                "  for i in 0..99",
                 "    puts '            ' + q + codeBlock[i] + q + ','",
                 "  end",
-                "  for i in 46..62",
+                "  for i in 44..61",
                 "    puts codeBlock[i]",
                 "  end",
                 "end",
@@ -38,7 +38,6 @@ $q = chr(39);
                 "using System.Collections.Generic;",
                 "using System.Linq;",
                 "using System.Text;",
-                "using System.Threading.Tasks;",
                 " ",
                 "namespace Quine",
                 "{",
@@ -108,7 +107,7 @@ $q = chr(39);
     for($i=16;$i<19;$i++) {
         print "$codeBlock[$i]\n";
     }
-    for($i=0;$i<101;$i++) {
+    for($i=0;$i<100;$i++) {
         print "                $q$codeBlock[$i]$q,\n";
     }
     for($i=19;$i<32;$i++) {
