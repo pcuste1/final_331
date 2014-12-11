@@ -6,7 +6,7 @@ all: quinerelay2.pl
 	@echo "##  CHECK  ##"
 	@echo "#############"
 	@echo
-#sdiff quinerelay.pl quinerelay2.pl
+	diff quinerelay.pl quinerelay2.pl
 
 quinerelay.rb: quinerelay.pl
 	@echo
@@ -16,22 +16,22 @@ quinerelay.rb: quinerelay.pl
 	@echo
 	perl quinerelay.pl > quinerelay.rb
 
-quinerelay.cs: quinerelay.rb
+quineRelay.java: quinerelay.rb
 	@echo
 	@echo "##########################"
-	@echo "##  2: Ruby -> C#       ##"
+	@echo "##  2: Ruby -> Java     ##"
 	@echo "##########################"
 	@echo
-	ruby quinerelay.rb > quinerelay.cs
+	ruby quinerelay.rb > quineRelay.java
 
-quinerelay.cpp: quinerelay.cs
+quinerelay.cpp: quineRelay.java
 	@echo
 	@echo "##########################"
-	@echo "##  2: C# -> C++        ##"
+	@echo "##  2: Java -> C++      ##"
 	@echo "##########################"
 	@echo
-	mcs quinerelay.cs 
-	mono quinerealy.exe > quinerelay.cpp
+	javac quineRelay.java 
+	java quineRelay > quinerelay.cpp
 
 quinerelay.py: quinerelay.cpp
 	@echo
