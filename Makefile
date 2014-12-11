@@ -6,7 +6,7 @@ all: quinerelay2.pl
 	@echo "##  CHECK  ##"
 	@echo "#############"
 	@echo
-	sdiff quinerelay.pl quinerelay2.pl
+#sdiff quinerelay.pl quinerelay2.pl
 
 quinerelay.rb: quinerelay.pl
 	@echo
@@ -30,7 +30,8 @@ quinerelay.cpp: quinerelay.cs
 	@echo "##  2: C# -> C++        ##"
 	@echo "##########################"
 	@echo
-	mcs quinerelay.cs > quinerelay.cpp
+	mcs quinerelay.cs 
+	mono quinerealy.exe > quinerelay.cpp
 
 quinerelay.py: quinerelay.cpp
 	@echo
@@ -47,3 +48,6 @@ quinerelay2.pl: quinerelay.py
 	@echo "##########################"
 	@echo
 	python quinerelay.py > quinerelay2.pl
+
+clean:
+	rm -f quinerelay.*
