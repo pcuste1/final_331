@@ -41,13 +41,13 @@ quinerelay.py: quinerelay.cpp
 	@echo
 	g++ -o quinerelay quinerelay.cpp && ./quinerelay > quinerelay.py
 
-quinerelay2.pl: quinerelay.py
+finalquine.pl: quinerelay.py
 	@echo
 	@echo "##########################"
 	@echo "##  2: Python -> Perl   ##"
 	@echo "##########################"
 	@echo
-	python quinerelay.py > fnalquine.pl
+	python quinerelay.py > finalquine.pl
 
 clean:
 	rm -f quinerelay*
