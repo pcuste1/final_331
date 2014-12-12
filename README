@@ -11,5 +11,5 @@ ruby quinerelay.rb > quineRelay.java
 javac quineRelay.java
 java quineRelay > quinerelay.cpp
 g++ -o quinerelay quinerelay.cpp && ./quinerelay > quinerelay.py
-python quinerelay.py > quinerelay2.pl
-diff quinerelay.pl quinerelay2.pl
+python quinerelay.py > finalquine.pl
+diff quinerelay.pl finalquine.pl
