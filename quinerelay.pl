@@ -1,5 +1,5 @@
 #!/usr/bin/perl -w
-
+             
 $q = chr(39);
 $n = chr(10);
 $d = chr(44);
