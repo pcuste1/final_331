@@ -1,12 +1,12 @@
 # Source inspiration: https://github.com/mame/quine-relay/blob/master/Makefile
 
-all: quinerelay2.pl
+all: finalquine.pl
 	@echo
 	@echo "#############"
 	@echo "##  CHECK  ##"
 	@echo "#############"
 	@echo
-	diff quinerelay.pl quinerelay2.pl
+	diff quinerelay.pl finalquine.pl
 
 quinerelay.rb: quinerelay.pl
 	@echo
@@ -47,7 +47,8 @@ quinerelay2.pl: quinerelay.py
 	@echo "##  2: Python -> Perl   ##"
 	@echo "##########################"
 	@echo
-	python quinerelay.py > quinerelay2.pl
+	python quinerelay.py > fnalquine.pl
 
 clean:
-	rm -f quinerelay.*
+	rm -f quinerelay*
+	rm -f quineRelay.*
